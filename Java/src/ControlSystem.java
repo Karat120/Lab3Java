@@ -48,7 +48,8 @@ public class ControlSystem {
         this.sadMode = sadMod;
         if (this.sadMode)
         {
-            laserScan= new LaserScanner();
+            sensorTempe=new SensorTemperature(80,220);
+            laserScan= new LaserScanner(0,true);
         }
     }
 
@@ -71,7 +72,7 @@ public class ControlSystem {
     public double getTempe(){
         return sensorTempe.getTemperature();
     }
-    public double getAmper(){
+    public double getAmperes(){
         return sensorTempe.getAmperes();
     }
 }
