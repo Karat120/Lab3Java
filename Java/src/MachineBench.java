@@ -90,7 +90,7 @@ public void launch(){
 }
 public void info() throws FileNotFoundException {
        String separator= File.separator;
-       String path=separator+"Users"+separator+"Karat"+separator+"Desktop"+separator+"lab3"+separator+"Java"+separator+"src"+separator+"info.txt";
+       String path=separator+"home"+separator+"karat"+separator+"Lab3Java"+separator+"Java"+separator+"src"+separator+"info.txt";
 File info=new File(path);
 Scanner scanner=new Scanner(info);
 while(scanner.hasNextLine()){
